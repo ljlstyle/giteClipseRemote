@@ -11,6 +11,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 public class LogoUtil {
+	////廖家龙    ---作者
 	//传入logo、二维码 ->带logo的二维码
 	public  static BufferedImage  logoMatrix( BufferedImage matrixImage,String logo ) throws IOException {
 		//在二维码上画logo:产生一个  二维码画板
