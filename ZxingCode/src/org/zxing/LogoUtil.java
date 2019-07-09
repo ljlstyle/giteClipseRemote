@@ -8,7 +8,7 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
-//aaa+bbb
+//aaa+bbbjjk
 public class LogoUtil {
 	////廖家龙    ---作者  帅哥  
 	//传入logo、二维码 ->带logo的二维码
