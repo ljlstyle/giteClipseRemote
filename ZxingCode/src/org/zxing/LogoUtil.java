@@ -16,7 +16,7 @@ public class LogoUtil {
 	public  static BufferedImage  logoMatrix( BufferedImage matrixImage,String logo ) throws IOException {
 		//在二维码上画logo:产生一个  二维码画板
 		Graphics2D g2 = matrixImage.createGraphics() ;
-		
+		//我来稿冲突
 		//画logo： String->BufferedImage(内存)
 		BufferedImage logoImg = ImageIO.read(new File(logo)) ;
 		int height = matrixImage.getHeight() ;
