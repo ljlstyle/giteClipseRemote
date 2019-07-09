@@ -1,5 +1,5 @@
 package org.zxing;
-//hello ljl 大家和气生财不要搞事情
+//hello ljl 大家和气生财不要搞事情 v
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics2D;
