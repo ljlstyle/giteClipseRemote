@@ -1,5 +1,5 @@
 package org.zxing;
-//hello ljl
+//hello ljl 我也开始装B了
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics2D;
