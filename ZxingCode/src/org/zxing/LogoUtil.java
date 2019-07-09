@@ -1,5 +1,5 @@
 package org.zxing;
-
+//hello ljl
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics2D;
@@ -11,32 +11,32 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 public class LogoUtil {
-	////ÁÎ¼ÒÁú    ---×÷Õß  Ë§¸ç  
-	//´«Èëlogo¡¢¶şÎ¬Âë ->´ølogoµÄ¶şÎ¬Âë
+	////å»–å®¶é¾™    ---ä½œè€…  å¸…å“¥  
+	//ä¼ å…¥logoã€äºŒç»´ç  ->å¸¦logoçš„äºŒç»´ç 
 	public  static BufferedImage  logoMatrix( BufferedImage matrixImage,String logo ) throws IOException {
-		//ÔÚ¶şÎ¬ÂëÉÏ»­logo:²úÉúÒ»¸ö  ¶şÎ¬Âë»­°å
+		//åœ¨äºŒç»´ç ä¸Šç”»logo:äº§ç”Ÿä¸€ä¸ª  äºŒç»´ç ç”»æ¿
 		Graphics2D g2 = matrixImage.createGraphics() ;
 		
-		//»­logo£º String->BufferedImage(ÄÚ´æ)
+		//ç”»logoï¼š String->BufferedImage(å†…å­˜)
 		BufferedImage logoImg = ImageIO.read(new File(logo)) ;
 		int height = matrixImage.getHeight() ;
 		int width = matrixImage.getWidth();
-		//´¿logoÍ¼Æ¬
+		//çº¯logoå›¾ç‰‡
 		g2.drawImage(logoImg  , width*2/5,height* 2/5,    width*1/5,height* 1/5  ,   null) ;
 		
-		//²úÉúÒ»¸ö »­ °×É«Ô²½ÇÕı·½ĞÎµÄ »­±Ê
+		//äº§ç”Ÿä¸€ä¸ª ç”» ç™½è‰²åœ†è§’æ­£æ–¹å½¢çš„ ç”»ç¬”
 		BasicStroke stroke = new BasicStroke(5,BasicStroke.CAP_ROUND ,BasicStroke.JOIN_ROUND) ;
-		//½«»­°å-»­±Ê ¹ØÁª
+		//å°†ç”»æ¿-ç”»ç¬” å…³è”
 		g2.setStroke(stroke);
-		//´´½¨Ò»¸öÕı·½ĞÎ
+		//åˆ›å»ºä¸€ä¸ªæ­£æ–¹å½¢
 		RoundRectangle2D.Float round = new RoundRectangle2D.Float(width*2/5,height* 2/5,    width*1/5,height* 1/5 , BasicStroke.CAP_ROUND ,BasicStroke.JOIN_ROUND);
 		g2.setColor(Color.WHITE);
 		g2.draw(round);
 		
-		//»ÒÉ«±ß¿ò
+		//ç°è‰²è¾¹æ¡†
 		BasicStroke stroke2 = new BasicStroke(1,BasicStroke.CAP_ROUND ,BasicStroke.JOIN_ROUND) ;
 		g2.setStroke(stroke2);
-		//´´½¨Ò»¸öÕı·½ĞÎ
+		//åˆ›å»ºä¸€ä¸ªæ­£æ–¹å½¢
 		RoundRectangle2D.Float round2 = new RoundRectangle2D.Float(width*2/5+2,height* 2/5+2,    width*1/5-4,height* 1/5 -4, BasicStroke.CAP_ROUND ,BasicStroke.JOIN_ROUND);
 //		Color color = new Color(128,128,128) ;
 		g2.setColor(Color.GRAY);
