@@ -1,5 +1,9 @@
 package org.zxing;
+<<<<<<< HEAD
 //hello ljl 大家和气生财
+=======
+//hello ljl 我真的搞事情了
+>>>>>>> branch 'master' of https://github.com/ljlstyle/giteClipseRemote.git
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics2D;
