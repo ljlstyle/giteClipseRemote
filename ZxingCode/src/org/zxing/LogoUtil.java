@@ -1,5 +1,5 @@
 package org.zxing;
-//hello ljl
+//hello ljl777
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics2D;
